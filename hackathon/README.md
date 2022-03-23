@@ -1,4 +1,4 @@
-# hackathon
+# hackathon - Ed Adeagbo
 
 ## Project setup
 ```
