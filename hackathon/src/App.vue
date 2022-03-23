@@ -13,7 +13,6 @@ import BaseCard from "./components/BaseCard.vue";
 import BaseCardImage from "./components/BaseCardImage.vue";
 import TheNavBar from "./components/layout/TheNavBar.vue";
 import TheFooter from "./components/layout/TheFooter.vue";
-import SocialMedia from "./components/SocialMedia.vue";
 
 const cardInfo = {
   cardTitle: "NEW ARRIVALS",
