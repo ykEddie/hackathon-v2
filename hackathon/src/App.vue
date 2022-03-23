@@ -1,26 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <BaseCard />
+    <BaseCardImage :cardInfo="cardInfo" :img="CardImage" />
+  </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script setup>
+import BaseCard from "./components/BaseCard.vue";
+import BaseCardImage from "./components/BaseCardImage.vue";
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+const cardInfo = {
+  cardTitle: "NEW ARRIVALS",
+};
+const CardImage = {
+  url: "https://empireave.com/wp-content/uploads/2020/02/Stussy-SP20-Lookbook-D2-Mens-17.jpg",
+  alt: "One new product from stussy",
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
